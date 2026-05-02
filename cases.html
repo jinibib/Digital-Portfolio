@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Analysis | Digital Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Digital Portfolio</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="foundations.html">Foundations</a></li>
+        <li><a href="cases.html" class="active">Cases</a></li>
+        <li><a href="advocacy.html">Advocacy</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="conclusion.html">Conclusion</a></li>
+      </ul>
+      <button class="dark-toggle" id="darkToggle">Dark</button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb fade-in"><a href="index.html">Home</a> &rsaquo; Case Analysis</div>
+      <h1 class="page-hero-title fade-in">Case Analysis</h1>
+      <p class="page-hero-sub fade-in">Examining real-world scenarios through the lens of Philippine cybercrime law.</p>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Case 1 -->
+      <div class="case-card fade-in">
+        <div class="case-header" onclick="toggleCase('case1')" role="button" tabindex="0" aria-expanded="false" aria-controls="case1">
+          <div class="case-header-left">
+            <span class="case-number">Case 01</span>
+            <h3>The Facebook Post That Went Viral</h3>
+          </div>
+          <span class="case-toggle-icon" id="icon-case1">&#9660;</span>
+        </div>
+        <div class="case-body" id="case1">
+          <div class="case-grid">
+            <div class="case-block">
+              <h4>Scenario</h4>
+              <p>
+                Maria, a college student, posted on Facebook accusing her barangay captain of corruption,
+                claiming he pocketed relief goods during a typhoon. The post gained thousands of shares.
+                The barangay captain filed a cyber libel complaint against Maria.
+              </p>
+            </div>
+            <div class="case-block">
+              <h4>Legal Issues</h4>
+              <ul>
+                <li>Does the post constitute cyber libel under RA 10175?</li>
+                <li>Is the accusation protected as a matter of public interest?</li>
+                <li>Was there malice in the publication?</li>
+              </ul>
+            </div>
+            <div class="case-block">
+              <h4>Analysis</h4>
+              <p><strong>Protected or Punishable?</strong><br />
+                Potentially protected. The Supreme Court has held that public officials have reduced
+                expectation of privacy regarding their official conduct. Criticism of a public official
+                on matters of public concern is generally protected speech.
+              </p>
+              <p><strong>Was the law applied correctly?</strong><br />
+                Filing cyber libel may be an overreach here. The post addresses a matter of public concern
+                (corruption), and the complainant is a public figure. The prosecution must prove actual malice —
+                that Maria knew the statement was false or acted with reckless disregard for its truth.
+              </p>
+            </div>
+            <div class="case-block verdict protected">
+              <h4>Personal Judgment</h4>
+              <p>
+                Maria's post, while potentially defamatory if false, touches on a matter of significant
+                public interest. Using cyber libel to silence criticism of public officials is a dangerous
+                precedent that chills free speech. The law should not be weaponized against citizens
+                holding their leaders accountable. If the allegations are true, it is whistleblowing — not libel.
+              </p>
+              <span class="verdict-badge protected-badge">Likely Protected Speech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case 2 -->
+      <div class="case-card fade-in">
+        <div class="case-header" onclick="toggleCase('case2')" role="button" tabindex="0" aria-expanded="false" aria-controls="case2">
+          <div class="case-header-left">
+            <span class="case-number">Case 02</span>
+            <h3>The Anonymous Hate Campaign</h3>
+          </div>
+          <span class="case-toggle-icon" id="icon-case2">&#9660;</span>
+        </div>
+        <div class="case-body" id="case2">
+          <div class="case-grid">
+            <div class="case-block">
+              <h4>Scenario</h4>
+              <p>
+                A group of students created a fake Facebook account using the name and photos of their
+                classmate, Ana. They posted fabricated stories claiming Ana was involved in drug use and
+                immoral behavior. Ana suffered severe emotional distress and was ostracized by peers.
+              </p>
+            </div>
+            <div class="case-block">
+              <h4>Legal Issues</h4>
+              <ul>
+                <li>Does this constitute cyber libel and/or identity theft?</li>
+                <li>Is the use of a fake account an aggravating circumstance?</li>
+                <li>Can Ana claim damages beyond criminal liability?</li>
+              </ul>
+            </div>
+            <div class="case-block">
+              <h4>Analysis</h4>
+              <p><strong>Protected or Punishable?</strong><br />
+                Clearly punishable. This is not protected speech — it is deliberate fabrication designed
+                to harm a private individual. There is clear malice, false statements of fact, and
+                identifiable harm to the victim's reputation and mental health.
+              </p>
+              <p><strong>Was the law applied correctly?</strong><br />
+                RA 10175 applies squarely here. The perpetrators may face cyber libel charges, and the
+                creation of a fake account using Ana's identity also constitutes computer-related identity
+                theft under Section 4(b)(3) of the same law.
+              </p>
+            </div>
+            <div class="case-block verdict punishable">
+              <h4>Personal Judgment</h4>
+              <p>
+                This is a clear case of cyberbullying and online harassment that caused real harm to a
+                private individual. The law is correctly applied here. Unlike Case 1, there is no public
+                interest justification — only malicious intent. Ana deserves both criminal justice and
+                civil damages. This case illustrates why cybercrime laws exist: to protect individuals
+                from targeted digital abuse.
+              </p>
+              <span class="verdict-badge punishable-badge">Punishable Under RA 10175</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PAGE NAV -->
+  <div class="page-nav-bar">
+    <div class="container">
+      <a href="foundations.html" class="page-nav-btn prev">&larr; Foundations</a>
+      <a href="advocacy.html" class="page-nav-btn next">Advocacy &rarr;</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>Freedom of Expression &amp; Cybercrime Law in the Philippines &mdash; Digital Portfolio</p>
+      <p>Created by Jennyvieve Mahinay BSIT III 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
